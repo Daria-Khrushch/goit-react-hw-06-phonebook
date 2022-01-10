@@ -27,12 +27,6 @@ const middleware = [
   logger,
 ];
 
-const contactsPersistConfig = {
-  key: 'contacts',
-  storage,
-  blacklist: ['filter'],
-};
-
 const store = configureStore({
   reducer: {
     contacts: persistReducer(persistConfig, contactsReducer),
